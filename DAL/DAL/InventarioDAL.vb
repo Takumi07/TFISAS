@@ -94,8 +94,13 @@
 
 
             For Each MiRemitoDetalle As Entidades.RemitoRenglon In paramRemito.RemitoRenglon
-
-                Dim ID_Movimiento As Integer
+                'Genero los movimientos para ese remito
+                Dim MiMovimiento As New Entidades.Movimiento
+                MiMovimiento.Proveedor = paramRemito.Proveedor
+                MiMovimiento.NroRemito = paramRemito.NroRemito
+                MiMovimiento.NroRenglon = MiRemitoDetalle.NroRenglon
+                MiMovimiento.Producto = MiRemitoDetalle.Producto
+                MiMovimiento.Cantidad = MiRemitoDetalle.Cantidad
 
                 'Valido si es Stock Inicial o entrada
                 Dim MisParametros2 As New Hashtable
@@ -104,33 +109,20 @@
                 MiDataTable = DAL.Conexion.Leer("VerificarTipoMovimiento", MisParametros2)
                 If MiDataTable.Rows.Count >= 1 Then
                     'Ya hay Stock Incial
-                    ID_Movimiento = GenerarMovimiento(MiRemitoDetalle.Producto.ID, 2, MiRemitoDetalle.Cantidad)
+                    '2 = entrada
+                    MiMovimiento.TipoMovimiento = New Entidades.TipoMovimiento(2)
+                    GenerarMovimiento(MiMovimiento)
                 Else
-                    'Es un Stock Inicial
-                    ID_Movimiento = GenerarMovimiento(MiRemitoDetalle.Producto.ID, 1, MiRemitoDetalle.Cantidad)
+                    'Es Stock Inicial
+                    '1 = entrada
+                    MiMovimiento.TipoMovimiento = New Entidades.TipoMovimiento(1)
+                    GenerarMovimiento(MiMovimiento)
                 End If
 
-                'Vinculo el renglon del remito con el Movimiento Generado
-                Dim MisParametros3 As New Hashtable
-                MisParametros3.Add("@NroRemito", paramRemito.NroRemito)
-                MisParametros3.Add("@ID_Proveedor", paramRemito.Proveedor.ID)
-                MisParametros3.Add("@NroRenglon", MiRemitoDetalle.NroRenglon)
-                MisParametros3.Add("@ID_Producto", MiRemitoDetalle.Producto.ID)
-                MisParametros3.Add("@ID_Movimiento", ID_Movimiento)
-                Dim DVHR As String = ""
-                DVHR = paramRemito.NroRemito & paramRemito.Proveedor.ID & MiRemitoDetalle.NroRenglon & MiRemitoDetalle.Producto.ID & ID_Movimiento & MiRemitoDetalle.Cantidad
-                MisParametros3.Add("@DVH", DVDAL.CalcularDVH(DVHR))
-                DAL.Conexion.ExecuteNonQuery("VincularRemitoMovimiento", MisParametros3)
-                DVDAL.CalcularDVV("RemitoDetalle")
             Next
         Catch ex As Exception
 
         End Try
-
-
-
-
-
     End Sub
 
     Public Sub RechazarRemito(ByVal paramRemito As Entidades.Remito)
@@ -244,36 +236,60 @@
     End Function
 
 
-    ''' <summary>
-    ''' 
-    ''' </summary>
-    ''' <param name="ID_Producto"></param>
-    ''' <param name="ID_TipoMovimiento"></param>
-    ''' <param name="Cantidad"></param>
-    ''' <returns>Devuelve el ID_Movimiento Generado</returns>
-    Public Shared Function GenerarMovimiento(ByVal ID_Producto As Integer, ID_TipoMovimiento As Integer, ByVal Cantidad As Integer) As Integer
+
+    Public Shared Sub GenerarMovimiento(ByVal paramMovimiento As Entidades.Movimiento)
         Try
             Dim MisParametros As New Hashtable
 
-            Dim ID_Movimiento As Integer
-            ID_Movimiento = Conexion.ObtenerID("Movimientos", "ID_Movimiento")
-            MisParametros.Add("@ID_Movimiento", ID_Movimiento)
-            MisParametros.Add("@ID_Producto", ID_Producto)
-            MisParametros.Add("@ID_TipoMovimiento", ID_TipoMovimiento)
-            Dim Fecha As Date
-            Fecha = DateTime.Now
-            MisParametros.Add("@Fecha", Fecha)
-            MisParametros.Add("@Cantidad", Cantidad)
-            Dim DVH As String = ""
-            DVH = ID_Movimiento & ID_Producto & ID_TipoMovimiento & Fecha.ToString("u", System.Globalization.CultureInfo.InvariantCulture) & Cantidad
-            MisParametros.Add("@DVH", DVDAL.CalcularDVH(DVH))
+            paramMovimiento.ID = Conexion.ObtenerID("Movimientos", "ID_Movimiento")
+            MisParametros.Add("@ID_Movimiento", paramMovimiento.ID)
+            MisParametros.Add("@ID_Producto", paramMovimiento.Producto.ID)
+            MisParametros.Add("@ID_TipoMovimiento", paramMovimiento.TipoMovimiento.ID)
+
+            'Cambiado
+
+            If paramMovimiento.NroFactura = 0 Then
+                MisParametros.Add("@NroFactura", DBNull.Value)
+            Else
+                MisParametros.Add("@NroFactura", paramMovimiento.NroFactura)
+            End If
+
+
+
+            If paramMovimiento.NroRemito = 0 Then
+                MisParametros.Add("@NroRemito", DBNull.Value)
+                MisParametros.Add("@ID_Proveedor", DBNull.Value)
+                MisParametros.Add("@NroRenglon", DBNull.Value)
+            Else
+                MisParametros.Add("@NroRemito", paramMovimiento.NroRemito)
+                MisParametros.Add("@ID_Proveedor", paramMovimiento.Proveedor.ID)
+                MisParametros.Add("@NroRenglon", paramMovimiento.NroRenglon)
+            End If
+
+
+            If IsNothing(paramMovimiento.AjusteStock) Then
+                MisParametros.Add("@ID_AjusteStock", DBNull.Value)
+            Else
+                MisParametros.Add("@ID_AjusteStock", paramMovimiento.AjusteStock.ID)
+            End If
+
+
+
+            paramMovimiento.Fecha = DateTime.Now
+            MisParametros.Add("@Fecha", paramMovimiento.Fecha)
+            MisParametros.Add("@Cantidad", paramMovimiento.Cantidad)
+
+            MisParametros.Add("@DVH", DVDAL.CalcularDVH(paramMovimiento.DVH))
             DAL.Conexion.ExecuteNonQuery("AltaMovimiento", MisParametros)
             DVDAL.CalcularDVV("Movimientos")
-            Return ID_Movimiento
+
         Catch ex As Exception
 
         End Try
-    End Function
+    End Sub
+
+
+
 
 
     Public Shared Function ObtenerStock(ByVal ID_Producto As Integer) As Integer

@@ -16,15 +16,6 @@ DAL
  <param name="paramEstado">1 = Pendiente, 2 = Aprobado, 3 = Rechazado</param>
  <returns>Retorna una lista de remitos completos (con sus renglones) </returns>
 </member>
-<member name="M:DAL.InventarioDAL.GenerarMovimiento(System.Int32,System.Int32,System.Int32)">
- <summary>
- 
- </summary>
- <param name="ID_Producto"></param>
- <param name="ID_TipoMovimiento"></param>
- <param name="Cantidad"></param>
- <returns>Devuelve el ID_Movimiento Generado</returns>
-</member>
 <member name="M:DAL.MangaDAL.NuevoProducto(Entidades.Producto)">
  
  <param name="paramProducto"></param>

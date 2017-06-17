@@ -40,48 +40,59 @@
             DVDAL.CalcularDVV("Factura")
 
 
-            Dim MiNroRenglon As Integer = 0
             For Each mipromocion As Entidades.Promocion In paramVenta.PromocionesCompradas
-                Dim ID_Movimiento As Integer
-                ID_Movimiento = InventarioDAL.GenerarMovimiento(mipromocion.Producto.ID, 3, mipromocion.Producto.CantidadComprada)
-                MiNroRenglon += 1
+                'Genero el renglon de la factura
                 Dim MisParametros2 As New Hashtable
                 MisParametros2.Add("@NroFactura", MiNroFactura)
-                MisParametros2.Add("@NroRenglon", MiNroRenglon)
                 MisParametros2.Add("@ID_Producto", mipromocion.Producto.ID)
-                MisParametros2.Add("@ID_Movimiento", ID_Movimiento)
                 MisParametros2.Add("@Cantidad", mipromocion.Producto.CantidadComprada)
                 Dim MiDescuento As Decimal
                 'Obtengo el valor de descuento.
                 MiDescuento = ((mipromocion.Producto.Precio.Precio) * (100 - mipromocion.Descuento))
                 MisParametros2.Add("@Descuento", MiDescuento)
                 Dim MIDVHR As String = ""
-                MIDVHR = MiNroFactura & MiNroRenglon & mipromocion.Producto.ID & ID_Movimiento & mipromocion.Producto.CantidadComprada & MiDescuento.ToString("0.00")
+                MIDVHR = MiNroFactura & mipromocion.Producto.ID & mipromocion.Producto.CantidadComprada & MiDescuento.ToString("0.00")
                 MisParametros2.Add("@DVH", DAL.DVDAL.CalcularDVH(MIDVHR))
                 DAL.Conexion.ExecuteNonQuery("AltaFacturaDetalle", MisParametros2)
                 DVDAL.CalcularDVV("FacturaDetalle")
+
+
+                'Genero el Movimiento Para ese renglon de la Factura
+
+                Dim MiMovimiento As New Entidades.Movimiento
+                MiMovimiento.Producto = mipromocion.Producto
+                MiMovimiento.TipoMovimiento = New Entidades.TipoMovimiento(3)
+                MiMovimiento.NroFactura = MiNroFactura
+                MiMovimiento.Cantidad = mipromocion.Producto.CantidadComprada
+                DAL.InventarioDAL.GenerarMovimiento(MiMovimiento)
             Next
 
 
             For Each MiProducto As Entidades.Producto In paramVenta.ProductosComprados
-                Dim ID_Movimiento As Integer
-                ID_Movimiento = InventarioDAL.GenerarMovimiento(MiProducto.ID, 3, MiProducto.CantidadComprada)
-                MiNroRenglon += 1
+                'Genero el renglon de la factura
                 Dim MisParametros2 As New Hashtable
                 MisParametros2.Add("@NroFactura", MiNroFactura)
-                MisParametros2.Add("@NroRenglon", MiNroRenglon)
                 MisParametros2.Add("@ID_Producto", MiProducto.ID)
-                MisParametros2.Add("@ID_Movimiento", ID_Movimiento)
                 MisParametros2.Add("@Cantidad", MiProducto.CantidadComprada)
                 Dim MiDescuento As Decimal
                 'Obtengo el valor de descuento.
                 MiDescuento = 0
                 MisParametros2.Add("@Descuento", MiDescuento)
                 Dim MIDVHR As String = ""
-                MIDVHR = MiNroFactura & MiNroRenglon & MiProducto.ID & ID_Movimiento & MiProducto.CantidadComprada & MiDescuento.ToString("0.00")
+                MIDVHR = MiNroFactura & MiProducto.ID & MiProducto.CantidadComprada & MiDescuento.ToString("0.00")
                 MisParametros2.Add("@DVH", DAL.DVDAL.CalcularDVH(MIDVHR))
                 DAL.Conexion.ExecuteNonQuery("AltaFacturaDetalle", MisParametros2)
                 DVDAL.CalcularDVV("FacturaDetalle")
+
+
+
+                'Genero el Movimiento Para ese renglon de la Factura
+                Dim MiMovimiento As New Entidades.Movimiento
+                MiMovimiento.Producto = MiProducto
+                MiMovimiento.TipoMovimiento = New Entidades.TipoMovimiento(3)
+                MiMovimiento.NroFactura = MiNroFactura
+                MiMovimiento.Cantidad = MiProducto.CantidadComprada
+                DAL.InventarioDAL.GenerarMovimiento(MiMovimiento)
             Next
 
 
@@ -137,8 +148,5 @@
         paramDetalleFactura.Cantidad = paramdatarow("Cantidad")
         paramDetalleFactura.Descuento = paramdatarow("Descuento")
         paramDetalleFactura.PrecioUnitario = DAL.PrecioDAL.ObtenerPrecioVenta(paramDetalleFactura.Producto, fecha)
-
-
-
     End Function
 End Class

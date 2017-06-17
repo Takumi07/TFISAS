@@ -73,6 +73,7 @@
     <Compile Include="Entidades\Genero.vb" />
     <Compile Include="Entidades\IVA.vb" />
     <Compile Include="Entidades\Manga.vb" />
+    <Compile Include="Entidades\Movimiento.vb" />
     <Compile Include="Entidades\Nota.vb" />
     <Compile Include="Entidades\NotaRenglon.vb" />
     <Compile Include="Entidades\Precio.vb" />

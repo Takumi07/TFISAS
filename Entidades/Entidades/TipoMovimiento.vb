@@ -1,4 +1,13 @@
 ﻿Public Class TipoMovimiento
+    Sub New()
+
+    End Sub
+
+    Sub New(ByVal paramID As Integer)
+        vID = paramID
+    End Sub
+
+
 
     Private vID As Integer
     Public Property ID() As Integer
