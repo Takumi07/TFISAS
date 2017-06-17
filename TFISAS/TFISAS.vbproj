@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{86ABF27A-7170-4416-B644-3FB2DE5B0446}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TFISAS</RootNamespace>
+    <AssemblyName>TFISAS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TFISAS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TFISAS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.7\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.3.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.3.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.3.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.3.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.3.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.3.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Diagnostics.Tracing.EventSource, Version=1.1.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.28\lib\net40\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdministrarRemitos.aspx" />
+    <Content Include="AgregarIdioma.aspx" />
+    <Content Include="AgregarPerfil.aspx" />
+    <Content Include="AgregarManga.aspx" />
+    <Content Include="AgregarRemito.aspx" />
+    <Content Include="IMAGENES\Bienvenidos.png" />
+    <Content Include="IMAGENES\CompraVacia.jpg" />
+    <Content Include="IMAGENES\GokuShenLong.png" />
+    <Content Include="IMAGENES\ImagenNoDisponible.jpg" />
+    <Content Include="IMAGENES\minus.ico" />
+    <Content Include="IMAGENES\plus.ico" />
+    <Content Include="IMAGENES\Refresh.ico" />
+    <Content Include="IMAGENES\registrarse.jpg" />
+    <Content Include="IMAGENES\SinPromos.jpg" />
+    <Content Include="IMAGENES\TusPromos.jpg" />
+    <Content Include="ModificarManga.aspx" />
+    <Content Include="ModificarProducto.aspx" />
+    <Content Include="AgregarProducto.aspx" />
+    <Content Include="AgregarUsuario.aspx" />
+    <Content Include="CambiarContraseña.aspx" />
+    <Content Include="CambiarIdioma.aspx" />
+    <Content Include="CSS\bootstrap-datetimepicker.min.css" />
+    <Content Include="CSS\bootstrap-theme.css" />
+    <Content Include="CSS\bootstrap-theme.min.css" />
+    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\DateTimePicker.css" />
+    <Content Include="CSS\MisEstilos.css" />
+    <Content Include="Desarrollo\Desarrollo.aspx" />
+    <Content Include="EliminarPerfil.aspx" />
+    <Content Include="EliminarUsuario.aspx" />
+    <Content Include="FONTS\fontawesome-webfont.svg" />
+    <Content Include="FONTS\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="IMAGENES\Arrow.png" />
+    <Content Include="IMAGENES\Comics.jpg" />
+    <Content Include="IMAGENES\Cosplay.jpg" />
+    <Content Include="IMAGENES\DBZEmpresa.jpg" />
+    <Content Include="IMAGENES\delete.png" />
+    <Content Include="IMAGENES\edit.png" />
+    <Content Include="IMAGENES\error.png" />
+    <Content Include="IMAGENES\Figura.jpg" />
+    <Content Include="IMAGENES\IntegrityCorrupted.png" />
+    <Content Include="IMAGENES\Logo.png" />
+    <Content Include="IMAGENES\Manga.jpg" />
+    <Content Include="IMAGENES\Merchandising.jpg" />
+    <Content Include="IMAGENES\michael.jpg" />
+    <Content Include="IMAGENES\noconect.png" />
+    <Content Include="IMAGENES\padlock-close.png" />
+    <Content Include="IMAGENES\padlock-open.png" />
+    <Content Include="IMAGENES\success.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="Institucional.aspx" />
+    <Content Include="JS\bootstrap.js" />
+    <Content Include="JS\bootstrap.min.js" />
+    <Content Include="JS\dropdown.js" />
+    <Content Include="JS\jquery-1.10.2.js" />
+    <Content Include="JS\jquery-1.9.1.min.js" />
+    <Content Include="JS\jquery-ui.js" />
+    <Content Include="JS\npm.js" />
+    <Content Include="AdministrarIdiomas.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Mensajes.aspx" />
+    <Content Include="ModificarPerfil.aspx" />
+    <Content Include="ModificarUsuarios.aspx" />
+    <Content Include="NuestrosProductos.aspx" />
+    <Content Include="Mangas.aspx" />
+    <Content Include="Productos.aspx" />
+    <Content Include="ODL_ProductosPromocionales.aspx" />
+    <Content Include="PromocionesProductos.aspx" />
+    <Content Include="PromocionesClientes.aspx" />
+    <Content Include="RealizarBackup.aspx" />
+    <Content Include="RealizarRestore.aspx" />
+    <Content Include="recuperarClave.aspx" />
+    <Content Include="Registrarse.aspx" />
+    <Content Include="ResumenCompra.aspx" />
+    <Content Include="VisualizarBitacoraAuditoria.aspx" />
+    <Content Include="VisualizarBitacoraErrores.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministrarRemitos.aspx.designer.vb">
+      <DependentUpon>AdministrarRemitos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarRemitos.aspx.vb">
+      <DependentUpon>AdministrarRemitos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AgregarIdioma.aspx.designer.vb">
+      <DependentUpon>AgregarIdioma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarIdioma.aspx.vb">
+      <DependentUpon>AgregarIdioma.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AgregarPerfil.aspx.designer.vb">
+      <DependentUpon>AgregarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarPerfil.aspx.vb">
+      <DependentUpon>AgregarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AgregarManga.aspx.designer.vb">
+      <DependentUpon>AgregarManga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarManga.aspx.vb">
+      <DependentUpon>AgregarManga.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AgregarRemito.aspx.designer.vb">
+      <DependentUpon>AgregarRemito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarRemito.aspx.vb">
+      <DependentUpon>AgregarRemito.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ModificarManga.aspx.designer.vb">
+      <DependentUpon>ModificarManga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarManga.aspx.vb">
+      <DependentUpon>ModificarManga.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ModificarProducto.aspx.designer.vb">
+      <DependentUpon>ModificarProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarProducto.aspx.vb">
+      <DependentUpon>ModificarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AgregarProducto.aspx.designer.vb">
+      <DependentUpon>AgregarProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarProducto.aspx.vb">
+      <DependentUpon>AgregarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuario.aspx.designer.vb">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarUsuario.aspx.vb">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\Validaciones.vb" />
+    <Compile Include="CambiarContraseña.aspx.designer.vb">
+      <DependentUpon>CambiarContraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarContraseña.aspx.vb">
+      <DependentUpon>CambiarContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CambiarIdioma.aspx.designer.vb">
+      <DependentUpon>CambiarIdioma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarIdioma.aspx.vb">
+      <DependentUpon>CambiarIdioma.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Desarrollo\Desarrollo.aspx.designer.vb">
+      <DependentUpon>Desarrollo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Desarrollo\Desarrollo.aspx.vb">
+      <DependentUpon>Desarrollo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EliminarPerfil.aspx.designer.vb">
+      <DependentUpon>EliminarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarPerfil.aspx.vb">
+      <DependentUpon>EliminarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EliminarUsuario.aspx.designer.vb">
+      <DependentUpon>EliminarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarUsuario.aspx.vb">
+      <DependentUpon>EliminarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.designer.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Institucional.aspx.designer.vb">
+      <DependentUpon>Institucional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Institucional.aspx.vb">
+      <DependentUpon>Institucional.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AdministrarIdiomas.aspx.designer.vb">
+      <DependentUpon>AdministrarIdiomas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarIdiomas.aspx.vb">
+      <DependentUpon>AdministrarIdiomas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Maestra.Master.designer.vb">
+      <DependentUpon>Maestra.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Maestra.Master.vb">
+      <DependentUpon>Maestra.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mensajes.aspx.designer.vb">
+      <DependentUpon>Mensajes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes.aspx.vb">
+      <DependentUpon>Mensajes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ModificarPerfil.aspx.designer.vb">
+      <DependentUpon>ModificarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPerfil.aspx.vb">
+      <DependentUpon>ModificarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuarios.aspx.designer.vb">
+      <DependentUpon>ModificarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUsuarios.aspx.vb">
+      <DependentUpon>ModificarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NuestrosProductos.aspx.designer.vb">
+      <DependentUpon>NuestrosProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NuestrosProductos.aspx.vb">
+      <DependentUpon>NuestrosProductos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Mangas.aspx.designer.vb">
+      <DependentUpon>Mangas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mangas.aspx.vb">
+      <DependentUpon>Mangas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Productos.aspx.designer.vb">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.aspx.vb">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ODL_ProductosPromocionales.aspx.designer.vb">
+      <DependentUpon>ODL_ProductosPromocionales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ODL_ProductosPromocionales.aspx.vb">
+      <DependentUpon>ODL_ProductosPromocionales.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PromocionesProductos.aspx.designer.vb">
+      <DependentUpon>PromocionesProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PromocionesProductos.aspx.vb">
+      <DependentUpon>PromocionesProductos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PromocionesClientes.aspx.designer.vb">
+      <DependentUpon>PromocionesClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PromocionesClientes.aspx.vb">
+      <DependentUpon>PromocionesClientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="RealizarBackup.aspx.designer.vb">
+      <DependentUpon>RealizarBackup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RealizarBackup.aspx.vb">
+      <DependentUpon>RealizarBackup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="RealizarRestore.aspx.designer.vb">
+      <DependentUpon>RealizarRestore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RealizarRestore.aspx.vb">
+      <DependentUpon>RealizarRestore.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="recuperarClave.aspx.designer.vb">
+      <DependentUpon>recuperarClave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="recuperarClave.aspx.vb">
+      <DependentUpon>recuperarClave.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Registrarse.aspx.designer.vb">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrarse.aspx.vb">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ResumenCompra.aspx.designer.vb">
+      <DependentUpon>ResumenCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResumenCompra.aspx.vb">
+      <DependentUpon>ResumenCompra.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VisualizarBitacoraAuditoria.aspx.designer.vb">
+      <DependentUpon>VisualizarBitacoraAuditoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarBitacoraAuditoria.aspx.vb">
+      <DependentUpon>VisualizarBitacoraAuditoria.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VisualizarBitacoraErrores.aspx.designer.vb">
+      <DependentUpon>VisualizarBitacoraErrores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarBitacoraErrores.aspx.vb">
+      <DependentUpon>VisualizarBitacoraErrores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Maestra.Master" />
+    <Content Include="CSS\bootstrap-theme.css.map" />
+    <Content Include="CSS\bootstrap-theme.min.css.map" />
+    <Content Include="CSS\bootstrap.css.map" />
+    <Content Include="CSS\bootstrap.min.css.map" />
+    <Content Include="FONTS\glyphicons-halflings-regular.eot" />
+    <Content Include="FONTS\glyphicons-halflings-regular.ttf" />
+    <Content Include="FONTS\glyphicons-halflings-regular.woff" />
+    <Content Include="FONTS\glyphicons-halflings-regular.woff2" />
+    <Content Include="FONTS\fontawesome-webfont.eot" />
+    <Content Include="FONTS\fontawesome-webfont.ttf" />
+    <Content Include="FONTS\fontawesome-webfont.woff" />
+    <Content Include="FONTS\fontawesome-webfont.woff2" />
+    <Content Include="FONTS\FontAwesome.otf" />
+    <Content Include="Base de datos\DER SAP - Global FINAL.vsd" />
+    <Content Include="Base de datos\201706062353.BAK" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.vbproj">
+      <Project>{a3a31f95-84cd-4a7c-b2f5-b28ca3bafd83}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{cb0c49e5-5f29-4076-8241-e9e49ec65ebb}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Errores\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2385</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2385/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

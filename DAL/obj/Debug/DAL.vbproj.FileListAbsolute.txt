@@ -1,0 +1,72 @@
+E:\TFI Proyecto Final\TFISAS\DAL\bin\Debug\DAL.dll
+E:\TFI Proyecto Final\TFISAS\DAL\bin\Debug\DAL.pdb
+E:\TFI Proyecto Final\TFISAS\DAL\bin\Debug\DAL.xml
+E:\TFI Proyecto Final\TFISAS\DAL\bin\Debug\Entidades.dll
+E:\TFI Proyecto Final\TFISAS\DAL\bin\Debug\Entidades.pdb
+E:\TFI Proyecto Final\TFISAS\DAL\bin\Debug\Entidades.xml
+E:\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+E:\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.Resources.resources
+E:\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+E:\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.dll
+E:\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.xml
+E:\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.pdb
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\bin\Debug\DAL.dll
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\bin\Debug\DAL.pdb
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\bin\Debug\DAL.xml
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\bin\Debug\Entidades.dll
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\bin\Debug\Entidades.pdb
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\bin\Debug\Entidades.xml
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.Resources.resources
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.dll
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.xml
+C:\Users\ayañez\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.pdb
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\bin\Debug\DAL.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\bin\Debug\DAL.pdb
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\bin\Debug\DAL.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\bin\Debug\Entidades.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\bin\Debug\Entidades.pdb
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\bin\Debug\Entidades.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\obj\Debug\DAL.Resources.resources
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\obj\Debug\DAL.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\obj\Debug\DAL.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\DAL\obj\Debug\DAL.pdb
+C:\Users\Navegador\Desktop\TFISAS\DAL\bin\Debug\DAL.dll
+C:\Users\Navegador\Desktop\TFISAS\DAL\bin\Debug\DAL.pdb
+C:\Users\Navegador\Desktop\TFISAS\DAL\bin\Debug\DAL.xml
+C:\Users\Navegador\Desktop\TFISAS\DAL\bin\Debug\Entidades.dll
+C:\Users\Navegador\Desktop\TFISAS\DAL\bin\Debug\Entidades.pdb
+C:\Users\Navegador\Desktop\TFISAS\DAL\bin\Debug\Entidades.xml
+C:\Users\Navegador\Desktop\TFISAS\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Users\Navegador\Desktop\TFISAS\DAL\obj\Debug\DAL.Resources.resources
+C:\Users\Navegador\Desktop\TFISAS\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+C:\Users\Navegador\Desktop\TFISAS\DAL\obj\Debug\DAL.dll
+C:\Users\Navegador\Desktop\TFISAS\DAL\obj\Debug\DAL.xml
+C:\Users\Navegador\Desktop\TFISAS\DAL\obj\Debug\DAL.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\bin\Debug\DAL.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\bin\Debug\DAL.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\bin\Debug\DAL.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\bin\Debug\Entidades.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\bin\Debug\Entidades.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\bin\Debug\Entidades.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.Resources.resources
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\DAL\obj\Debug\DAL.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\bin\Debug\DAL.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\bin\Debug\DAL.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\bin\Debug\DAL.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\bin\Debug\Entidades.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\bin\Debug\Entidades.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\bin\Debug\Entidades.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.Resources.resources
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\DAL\obj\Debug\DAL.pdb

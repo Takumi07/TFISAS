@@ -1,0 +1,185 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Maestra.master.vb" Inherits="TFISAS.Maestra" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Shigami Anime Store</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <script src="JS/jquery-1.10.2.js"></script>
+    <script src="JS/jquery-1.9.1.min.js"></script>
+    <script src="JS/jquery-ui.js"></script>
+    <link href="CSS/bootstrap-theme.css" rel="stylesheet" />
+    <link href="CSS/bootstrap-theme.css.map" rel="stylesheet" type="text/plain" />
+    <link href="CSS/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="CSS/bootstrap.css" rel="stylesheet" />
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/MisEstilos.css" rel="stylesheet" />
+    <script src="JS/bootstrap.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <!-- <script src="JS/npm.js"></script> -->
+    <script src="JS/dropdown.js"></script>
+</head>
+<body>
+    <form runat="server" id="Master">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 bordeMenu fondoVerde">
+                    <asp:Menu ID="menuEstatico" runat="server" Orientation="Horizontal" Font-Bold="true" Font-Size="14px" ForeColor="#FFFFFF" Width="100%">
+                        <StaticSelectedStyle BackColor="#FF6862" />
+                        <StaticMenuItemStyle VerticalPadding="6px" HorizontalPadding="10px" />
+                        <StaticHoverStyle BackColor="#FFFFFF" ForeColor="#333333" />
+                        <DynamicHoverStyle BackColor="#FFFFFF" ForeColor="#333333" />
+                        <DynamicMenuStyle BackColor="#00919E" />
+                        <DynamicSelectedStyle BackColor="#00919E" />
+
+                        <Items>
+                            <asp:MenuItem Text="Inicio" Value="Inicio" NavigateUrl="~/index.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Institucional" Value="Institucional" NavigateUrl="~/Institucional.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Nuestros Productos" Value="Nuestros Productos" NavigateUrl="~/NuestrosProductos.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Mi Compra" Value="Mi Compra" NavigateUrl="~/ResumenCompra.aspx"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-3">
+                    <br />
+                    <asp:Image ID="LogoMenu" runat="server" ImageUrl="Imagenes/Logo.png" CssClass="img-responsive" Height="100px" Width="250px" />
+                </div>
+
+                <div class="col-md-4 col-md-offset-5">
+                    <div id="menuOpcionesUsuario" class="menuUsuario" runat="server">
+                        <div class="dropdown navbar-right">
+                            <button class="dropdown-toggle botonUsuario" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <img src="Imagenes/michael.jpg" class="botonUsuarioImagen" id="imagenperfil" runat="server" />
+                                <asp:Label ID="lbl_NombreUsuarioTexto" runat="server" Text="Label" CssClass="botonUsuarioTexto"></asp:Label>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li class="menuUsuarioli">
+                                    <asp:LinkButton ID="lkPassword" runat="server" CssClass="menuUsuarioOpciones" OnClick="lkPassword_Click" Text="Cambiar Contraseña" CausesValidation="false"></asp:LinkButton></li>
+                                <li class="menuUsuarioli">
+                                    <asp:LinkButton ID="lkIdioma" runat="server" Text="Cambiar Idioma" CssClass="menuUsuarioOpciones" OnClick="lkIdioma_Click" CausesValidation="false"></asp:LinkButton></li>
+                                <li class="menuUsuarioli">
+                                    <asp:LinkButton ID="lkPerfil" runat="server" Text="Perfil" CssClass="menuUsuarioOpciones" OnClick="lkPerfil_Click" CausesValidation="false"></asp:LinkButton></li>
+                                <li class="menuUsuarioli">
+                                    <asp:LinkButton ID="lkLogOut" runat="server" Text="Cerrar Sesión" CssClass="menuUsuarioOpciones" OnClick="lkLogOut_Click" CausesValidation="false"></asp:LinkButton></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!--<div id="lineasuperior" class="row lineaCopyright"></div>-->
+
+
+
+            <div class="row fondoClaro bordeMenu" id="menuSistema" runat="server">
+                <div class="col-md-12">
+                    <asp:Menu ID="menuPrincipal" runat="server" Orientation="Horizontal" Font-Names="Times New Romans" Font-Size="18PX" ForeColor="#000000" Height="37px">
+                        <StaticSelectedStyle BackColor="#FFFFFF" />
+                        <StaticMenuItemStyle HorizontalPadding="10px" VerticalPadding="6px" />
+                        <Items>
+                            <asp:MenuItem Text="Administración" Value="Administracion" NavigateUrl="#">
+                                <asp:MenuItem Text="Agregar Idioma" Value="Agregar Idioma" NavigateUrl="AgregarIdioma.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Administrar Idioma" Value="Administrar Idioma" NavigateUrl="AdministrarIdiomas.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Realizar Backup" Value="Realizar Backup" NavigateUrl="RealizarBackup.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Realizar Restore" Value="Realizar Restore" NavigateUrl="RealizarRestore.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Agregar Perfil" Value="Agregar Perfil" NavigateUrl="AgregarPerfil.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Modificar Perfil" Value="Modificar Perfil" NavigateUrl="ModificarPerfil.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Eliminar Perfil" Value="Eliminar Perfil" NavigateUrl="EliminarPerfil.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Bitacora Auditoria" Value="Bitacora Auditoria" NavigateUrl="VisualizarBitacoraAuditoria.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Bitacora Errores" Value="Bitacora Errores" NavigateUrl="VisualizarBitacoraErrores.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Usuarios" Value="Usuarios" NavigateUrl="#">
+                                <asp:MenuItem Text="Agregar Usuario" Value="Agregar Usuario" NavigateUrl="AgregarUsuario.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Modificar Usuarios" Value="Modificar Usuarios" NavigateUrl="ModificarUsuarios.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Eliminar Usuarios" Value="Eliminar Usuarios" NavigateUrl="EliminarUsuario.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Productos" Value="Productos" NavigateUrl="#">
+                                <asp:MenuItem Text="Agregar Producto" Value="Agregar Producto" NavigateUrl="AgregarProducto.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Agregar Manga" Value="Agregar Manga" NavigateUrl="AgregarManga.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Modificar Producto" Value="Modificar Producto" NavigateUrl="ModificarProducto.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Modificar Manga" Value="Modificar Manga" NavigateUrl="ModificarManga.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Logística" Value="Logística" NavigateUrl="#">
+                                <asp:MenuItem Text="Agregar Remito" Value="Agregar Remito" NavigateUrl="AgregarRemito.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Administrar Remitos" Value="Administrar Remito" NavigateUrl="AdministrarRemitos.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#E8D1B2" ForeColor="#333333" />
+                        <DynamicHoverStyle BackColor="#E8D1B2" ForeColor="#333333" />
+                        <DynamicMenuStyle BackColor="#F4E1C1" />
+                        <DynamicSelectedStyle BackColor="#F4E1C1" />
+                        <DynamicMenuItemStyle HorizontalPadding="10px" VerticalPadding="6px" />
+                    </asp:Menu>
+                </div>
+            </div>
+
+
+            <!--<div class="row lineaMenu"></div>-->
+
+
+            <div class="row fondoPagina">
+                <!-- Ver este menú mas adelante
+                <div class="col-md-2">
+                    <asp:Menu ID="Menu1" runat="server"></asp:Menu>
+                </div>
+                -->
+
+                <div class="col-md-10 col-md-offset-1 fondoPagina">
+                    <!-- <div class="col-md-10 fondoPagina">-->
+
+                    <div id="divDBError" class="text-center col-md-12" runat="server" visible="false">
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <asp:Image ID="Image1" runat="server" CssClass="" ImageUrl="~/Imagenes/IntegrityCorrupted.png" Width="256px" Height="256px" />
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <asp:Label ID="lbl_BDError" runat="server" CssClass="labelStyle" Font-Size="XX-Large" Text="La integridad de la base de datos se encuentra corrupta. Por favor, contacte a un administrador."></asp:Label>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </div>
+
+                    <asp:ContentPlaceHolder ID="ContenidoPagina" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+
+            <div class="row fondoClaro lineaCopyright"></div>
+            <div class="row fondoClaro">
+                <br />
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="textoCopyright">
+                        <asp:Label ID="Copyright" runat="server" CssClass="control-label Negrita" Text="Portal Web Realizado por Alexis Ezequiel Yañez - Copyright 2016-2017 - Universidad Abierta Interamericana"></asp:Label>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+            <div class="row fondoClaro lineaCopyright"></div>
+        </div>
+    </form>
+</body>
+</html>

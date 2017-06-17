@@ -1,0 +1,78 @@
+E:\TFI Proyecto Final\TFISAS\BLL\bin\Debug\BLL.dll
+E:\TFI Proyecto Final\TFISAS\BLL\bin\Debug\BLL.pdb
+E:\TFI Proyecto Final\TFISAS\BLL\bin\Debug\BLL.xml
+E:\TFI Proyecto Final\TFISAS\BLL\bin\Debug\DAL.dll
+E:\TFI Proyecto Final\TFISAS\BLL\bin\Debug\Entidades.dll
+E:\TFI Proyecto Final\TFISAS\BLL\bin\Debug\DAL.pdb
+E:\TFI Proyecto Final\TFISAS\BLL\bin\Debug\DAL.xml
+E:\TFI Proyecto Final\TFISAS\BLL\bin\Debug\Entidades.pdb
+E:\TFI Proyecto Final\TFISAS\BLL\bin\Debug\Entidades.xml
+E:\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+E:\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.Resources.resources
+E:\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+E:\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.dll
+E:\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.xml
+E:\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.pdb
+C:\Users\ayañez\Desktop\TFI\TFISAS\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Users\ayañez\Desktop\TFI\TFISAS\BLL\obj\Debug\BLL.Resources.resources
+C:\Users\ayañez\Desktop\TFI\TFISAS\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\bin\Debug\BLL.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\bin\Debug\BLL.pdb
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\bin\Debug\BLL.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\bin\Debug\DAL.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\bin\Debug\Entidades.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\bin\Debug\DAL.pdb
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\bin\Debug\DAL.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\bin\Debug\Entidades.pdb
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\bin\Debug\Entidades.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\obj\Debug\BLL.Resources.resources
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\obj\Debug\BLL.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\obj\Debug\BLL.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\BLL\obj\Debug\BLL.pdb
+C:\Users\Navegador\Desktop\TFISAS\BLL\bin\Debug\BLL.dll
+C:\Users\Navegador\Desktop\TFISAS\BLL\bin\Debug\BLL.pdb
+C:\Users\Navegador\Desktop\TFISAS\BLL\bin\Debug\BLL.xml
+C:\Users\Navegador\Desktop\TFISAS\BLL\bin\Debug\DAL.dll
+C:\Users\Navegador\Desktop\TFISAS\BLL\bin\Debug\Entidades.dll
+C:\Users\Navegador\Desktop\TFISAS\BLL\bin\Debug\DAL.pdb
+C:\Users\Navegador\Desktop\TFISAS\BLL\bin\Debug\DAL.xml
+C:\Users\Navegador\Desktop\TFISAS\BLL\bin\Debug\Entidades.pdb
+C:\Users\Navegador\Desktop\TFISAS\BLL\bin\Debug\Entidades.xml
+C:\Users\Navegador\Desktop\TFISAS\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Users\Navegador\Desktop\TFISAS\BLL\obj\Debug\BLL.Resources.resources
+C:\Users\Navegador\Desktop\TFISAS\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Users\Navegador\Desktop\TFISAS\BLL\obj\Debug\BLL.dll
+C:\Users\Navegador\Desktop\TFISAS\BLL\obj\Debug\BLL.xml
+C:\Users\Navegador\Desktop\TFISAS\BLL\obj\Debug\BLL.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\bin\Debug\BLL.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\bin\Debug\BLL.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\bin\Debug\BLL.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\bin\Debug\DAL.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\bin\Debug\Entidades.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\bin\Debug\DAL.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\bin\Debug\DAL.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\bin\Debug\Entidades.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\bin\Debug\Entidades.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\obj\Debug\BLL.Resources.resources
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\obj\Debug\BLL.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\obj\Debug\BLL.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\BLL\obj\Debug\BLL.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\bin\Debug\BLL.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\bin\Debug\BLL.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\bin\Debug\BLL.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\bin\Debug\DAL.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\bin\Debug\Entidades.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\bin\Debug\DAL.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\bin\Debug\DAL.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\bin\Debug\Entidades.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\bin\Debug\Entidades.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.Resources.resources
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\BLL\obj\Debug\BLL.pdb

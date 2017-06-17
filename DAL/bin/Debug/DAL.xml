@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DAL
+</name>
+</assembly>
+<members>
+<member name="M:DAL.GeneroDAL.ListarGeneros">
+ <summary> Método que devuelve todos los generos </summary>
+</member>
+<member name="M:DAL.InventarioDAL.ListarRemitos(System.Int32)">
+ <summary>
+ Lista los remitos en diversos estados
+ </summary>
+ <param name="paramEstado">1 = Pendiente, 2 = Aprobado, 3 = Rechazado</param>
+ <returns>Retorna una lista de remitos completos (con sus renglones) </returns>
+</member>
+<member name="M:DAL.InventarioDAL.GenerarMovimiento(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="ID_Producto"></param>
+ <param name="ID_TipoMovimiento"></param>
+ <param name="Cantidad"></param>
+ <returns>Devuelve el ID_Movimiento Generado</returns>
+</member>
+<member name="M:DAL.MangaDAL.NuevoProducto(Entidades.Producto)">
+ 
+ <param name="paramProducto"></param>
+</member>
+<member name="M:DAL.MangaDAL.ListarProductosManga">
+ <summary>
+ Lista los mangas que NO estan dados de baja
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:DAL.ProductoDAL.ListarProductos">
+ <summary>
+ Este método NO lista los mangas
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:DAL.ProductoDAL.NuevoProducto(Entidades.Producto)">
+ <summary>Este método se encargará de persistir un producto.</summary>
+ <param name="paramProducto"></param>
+</member>
+<member name="M:DAL.TipoProductoDAL.ListarTipoProducto">
+ <summary> Método que devuelve todos los Tipos de productos </summary>
+</member>
+<member name="M:DAL.DVDAL.CalcularDVH(System.String@)">
+ <summary>Calcula los dígitos verificadores Horizontales para insertar un registro.</summary>
+ <param name="Fila">Registro a insertar</param>
+ <returns>DVH de ese registro</returns>
+</member>
+<member name="M:DAL.DVDAL.CalcularDVV(System.String@)">
+ <summary>Calcula los dígitos verificadores verticales.</summary>
+ <param name="paramTabla">Tabla a la cual se le calcula los DVV</param>
+</member>
+<member name="M:DAL.DVDAL.VerificarTabla(System.String)">
+ <summary>Verifica si la tabla DVV existe por si me la borraron de la base de datos como en la primer entrega</summary>
+</member>
+<member name="T:DAL.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:DAL.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:DAL.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:DAL.PermisosDAL.listarFamilias">
+ <summary>Me lista incluso el perfil eliminado</summary>
+</member>
+<member name="M:DAL.UsuarioDAL.ListarTodos">
+ <summary>Trae todos los usuarios, incluyendo los dados de baja. </summary>
+</member>
+<member name="M:DAL.UsuarioDAL.ListarNoBaja">
+ <summary>Trae Todos los usuarios, menos los dado de baja</summary>
+</member>
+<member name="M:DAL.UsuarioDAL.ListarTodosLazyAuditoria">
+ <summary>Trae todos los usuarios, incluyendo los dados de baja, pero optimizado para auditoria. </summary>
+</member>
+</members>
+</doc>

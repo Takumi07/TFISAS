@@ -1,0 +1,273 @@
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\ApplicationInsights.config
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.dll.config
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.pdb
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\BLL.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Entidades.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.Agent.Intercept.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.Web.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.IO.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.Runtime.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.Threading.Tasks.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\DAL.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\BLL.pdb
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\BLL.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Entidades.pdb
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Entidades.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.Web.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.IO.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.Runtime.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.Threading.Tasks.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\DAL.pdb
+E:\TFI Proyecto Final\TFISAS\TFISAS\bin\DAL.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.App.config
+E:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.vbprojResolveAssemblyReference.cache
+E:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.Resources.resources
+E:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.GenerateResource.Cache
+E:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.dll
+E:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.xml
+E:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.pdb
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\ApplicationInsights.config
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.dll.config
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.pdb
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\BLL.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Entidades.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.Agent.Intercept.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.PerfCounterCollector.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.Web.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.IO.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.Runtime.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.Threading.Tasks.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\DAL.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\BLL.pdb
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\BLL.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Entidades.pdb
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Entidades.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.Web.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.IO.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.Runtime.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\System.Threading.Tasks.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\DAL.pdb
+I:\TFI Proyecto Final\TFISAS\TFISAS\bin\DAL.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.App.config
+I:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.vbprojResolveAssemblyReference.cache
+I:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.Resources.resources
+I:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.GenerateResource.Cache
+I:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.dll
+I:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.xml
+I:\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.pdb
+C:\Users\ayañez\Desktop\TFI\TFISAS\TFISAS\bin\BLL.dll
+C:\Users\ayañez\Desktop\TFI\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.App.config
+C:\Users\ayañez\Desktop\TFI\TFISAS\TFISAS\obj\Debug\TFISAS.vbprojResolveAssemblyReference.cache
+C:\Users\ayañez\Desktop\TFI\TFISAS\TFISAS\obj\Debug\TFISAS.Resources.resources
+C:\Users\ayañez\Desktop\TFI\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.GenerateResource.Cache
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\ApplicationInsights.config
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\TFISAS.dll.config
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\TFISAS.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\TFISAS.pdb
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\TFISAS.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\BLL.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Entidades.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.AI.Web.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\System.IO.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\System.Runtime.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\System.Threading.Tasks.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\DAL.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\BLL.pdb
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\BLL.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Entidades.pdb
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Entidades.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.AI.Web.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\System.IO.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\System.Runtime.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\System.Threading.Tasks.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\DAL.pdb
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\bin\DAL.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.App.config
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\obj\Debug\TFISAS.vbprojResolveAssemblyReference.cache
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\obj\Debug\TFISAS.Resources.resources
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.GenerateResource.Cache
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\obj\Debug\TFISAS.dll
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\obj\Debug\TFISAS.xml
+C:\Users\Navegador\Desktop\Proyecto\TFISAS\TFISAS\obj\Debug\TFISAS.pdb
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\ApplicationInsights.config
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\TFISAS.dll.config
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\TFISAS.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\TFISAS.pdb
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\TFISAS.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\BLL.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Entidades.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.AI.Web.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\System.IO.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\System.Runtime.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\System.Threading.Tasks.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\DAL.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\BLL.pdb
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\BLL.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Entidades.pdb
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Entidades.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.AI.Web.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\System.IO.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\System.Runtime.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\System.Threading.Tasks.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\DAL.pdb
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\bin\DAL.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.App.config
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\obj\Debug\TFISAS.vbprojResolveAssemblyReference.cache
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\obj\Debug\TFISAS.Resources.resources
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.GenerateResource.Cache
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\obj\Debug\TFISAS.dll
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\obj\Debug\TFISAS.xml
+C:\Users\Navegador\Desktop\TFISAS\TFISAS\obj\Debug\TFISAS.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\ApplicationInsights.config
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\TFISAS.dll.config
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\TFISAS.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\TFISAS.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\TFISAS.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\BLL.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Entidades.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.AI.Web.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\DAL.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\BLL.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\BLL.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Entidades.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Entidades.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.AI.Web.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\DAL.pdb
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\bin\DAL.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\obj\Debug\TFISAS.vbprojResolveAssemblyReference.cache
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\obj\Debug\TFISAS.Resources.resources
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.GenerateResource.Cache
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\obj\Debug\TFISAS.dll
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\obj\Debug\TFISAS.xml
+C:\Users\Programadora\Desktop\TFI\TFISAS\TFISAS\obj\Debug\TFISAS.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\ApplicationInsights.config
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.dll.config
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\TFISAS.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\BLL.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Entidades.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.Web.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\DAL.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\BLL.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\BLL.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Entidades.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Entidades.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.Web.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\DAL.pdb
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\bin\DAL.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.vbprojResolveAssemblyReference.cache
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.Resources.resources
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.vbproj.GenerateResource.Cache
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.dll
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.xml
+C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\TFISAS\obj\Debug\TFISAS.pdb
