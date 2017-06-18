@@ -40,6 +40,12 @@ BLL
 <member name="M:BLL.GeneroBLL.ListarGeneros">
  <summary> Método que devuelve todos los generos </summary>
 </member>
+<member name="M:BLL.ProductoBLL.ListarTodosProductosStock">
+ <summary>
+Método con Lazy Loading que lista todos los productos NO DADOS DE BAJA para ver su stock. INCLUYE LOS MANGAS. Objetos INCOMPLETOS. 
+ </summary>
+ <returns></returns>
+</member>
 <member name="M:BLL.TipoProductoBLL.ListarTipoProducto">
  <summary> Método que devuelve todos los Tipos de Productos </summary>
 </member>

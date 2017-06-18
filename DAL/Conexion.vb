@@ -10,10 +10,6 @@ Imports System.Web
 
 
 Public Class Conexion
-
-    'PONER LA NUEVA CLASE Y ADAPTAR TODO ACA
-
-
     'Casa
     'Private Shared MiStringConexion As String = "Data Source=TAKUMI\SQLEXPRESS;Initial Catalog=TFISAS;Integrated Security=True"
 
@@ -48,12 +44,7 @@ Public Class Conexion
 
     Shared Function retornaConexionMaestra() As SqlConnection
         Dim _objConexionMaster As New SqlConnection
-        'Casa 
-        '_objConexionMaster.ConnectionString = "Data Source=TAKUMI\SQLEXPRESS;Initial Catalog=Master;Integrated Security=True"
-
         _objConexionMaster.ConnectionString = System.Web.Configuration.WebConfigurationManager.ConnectionStrings("Maestra").ConnectionString
-        'Trabajo
-        '_objConexionMaster.ConnectionString = "Data Source=PROGRAMADORA-PC;Initial Catalog=master;Integrated Security=True"
         Return _objConexionMaster
     End Function
 
@@ -64,6 +55,8 @@ Public Class Conexion
             MiComando = New SqlCommand
             MiComando.Connection = MiConexion
             MiComando.CommandText = paramConsulta
+            'Agregado para que no haya tiempo lìmite.
+            MiComando.CommandTimeout = 0
             MiComando.CommandType = CommandType.StoredProcedure
             If Not hdatos Is Nothing Then
                 'si la hashtable no esta vacia, y tiene el dato q busco 
@@ -78,43 +71,11 @@ Public Class Conexion
             MiConexion.Close()
 
         Catch ex As SqlException
-            Try
-                Dim directorio As String
-                directorio = System.Configuration.ConfigurationSettings.AppSettings("rutaerrores").Trim
-                CrearDirectorio(directorio)
-
-                Dim nombre As String
-                nombre = DateTime.Now.Year & DateTime.Now.Month.ToString.PadLeft(2, "0") & DateTime.Now.Day & DateTime.Now.Hour & DateTime.Now.Minute & DateTime.Now.Second & ".TXT"
-
-                Using outputFile As New StreamWriter(directorio & Convert.ToString(nombre))
-                    outputFile.WriteLine("Type: " & ex.GetType.ToString)
-                    outputFile.WriteLine("Error: " & ex.Message)
-                    outputFile.WriteLine("Stack Trace: " & ex.StackTrace)
-                    outputFile.WriteLine("HRESULT: " & ex.ToString)
-                    outputFile.Write("Number" & ex.Number.ToString)
-                End Using
-            Catch ex2 As Exception
-                Throw ex
-            End Try
+            RegistrarSQLException(ex)
             Throw ex
         Catch ex As Exception
-            Try
-                Dim directorio As String
-                directorio = System.Configuration.ConfigurationSettings.AppSettings("rutaerrores").Trim
-                CrearDirectorio(directorio)
-
-                Dim nombre As String
-                nombre = DateTime.Now.Year & DateTime.Now.Month.ToString.PadLeft(2, "0") & DateTime.Now.Day & DateTime.Now.Hour & DateTime.Now.Minute & DateTime.Now.Second & ".TXT"
-
-                Using outputFile As New StreamWriter(directorio & Convert.ToString(nombre))
-                    outputFile.WriteLine("Type: " & ex.GetType.ToString)
-                    outputFile.WriteLine("Error: " & ex.Message)
-                    outputFile.WriteLine("Stack Trace: " & ex.StackTrace)
-                    outputFile.WriteLine("HRESULT: " & ex.ToString)
-                End Using
-            Catch ex2 As Exception
-                Throw ex
-            End Try
+            RegistrarExceptionGenerica(ex)
+            Throw ex
         End Try
     End Function
 
@@ -140,49 +101,12 @@ Public Class Conexion
 
         Catch ex As SqlException
             MiTransaccion.Rollback()
-
-            Try
-                Dim directorio As String
-                directorio = System.Configuration.ConfigurationSettings.AppSettings("rutaerrores").Trim
-                CrearDirectorio(directorio)
-
-                Dim nombre As String
-                nombre = DateTime.Now.Year & DateTime.Now.Month.ToString.PadLeft(2, "0") & DateTime.Now.Day & DateTime.Now.Hour & DateTime.Now.Minute & DateTime.Now.Second & ".TXT"
-
-                Using outputFile As New StreamWriter(directorio & Convert.ToString(nombre))
-                    outputFile.WriteLine("Type: " & ex.GetType.ToString)
-                    outputFile.WriteLine("Error: " & ex.Message)
-                    outputFile.WriteLine("Stack Trace: " & ex.StackTrace)
-                    outputFile.WriteLine("HRESULT: " & ex.ToString)
-                    outputFile.Write("Number" & ex.Number.ToString)
-                End Using
-            Catch ex2 As Exception
-                Throw ex
-            End Try
-
+            RegistrarSQLException(ex)
             Throw ex
         Catch ex As Exception
-
             MiTransaccion.Rollback()
-            Try
-                Dim directorio As String
-                directorio = System.Configuration.ConfigurationSettings.AppSettings("rutaerrores").Trim
-                CrearDirectorio(directorio)
-
-                Dim nombre As String
-                nombre = DateTime.Now.Year & DateTime.Now.Month.ToString.PadLeft(2, "0") & DateTime.Now.Day & DateTime.Now.Hour & DateTime.Now.Minute & DateTime.Now.Second & ".TXT"
-
-                Using outputFile As New StreamWriter(directorio & Convert.ToString(nombre))
-                    outputFile.WriteLine("Type: " & ex.GetType.ToString)
-                    outputFile.WriteLine("Error: " & ex.Message)
-                    outputFile.WriteLine("Stack Trace: " & ex.StackTrace)
-                    outputFile.WriteLine("HRESULT: " & ex.ToString)
-                End Using
-            Catch ex2 As Exception
-                Throw ex
-            End Try
+            RegistrarExceptionGenerica(ex)
             Throw ex
-
         Finally
             MiConexion.Close()
         End Try
@@ -215,24 +139,11 @@ Public Class Conexion
             End If
             Return _resultado
 
+        Catch ex As SqlException
+            RegistrarSQLException(ex)
+            Throw ex
         Catch ex As Exception
-            Try
-                Dim directorio As String
-                directorio = System.Configuration.ConfigurationSettings.AppSettings("rutaerrores").Trim
-                CrearDirectorio(directorio)
-
-                Dim nombre As String
-                nombre = DateTime.Now.Year & DateTime.Now.Month.ToString.PadLeft(2, "0") & DateTime.Now.Day & DateTime.Now.Hour & DateTime.Now.Minute & DateTime.Now.Second & ".TXT"
-
-                Using outputFile As New StreamWriter(directorio & Convert.ToString(nombre))
-                    outputFile.WriteLine("Type: " & ex.GetType.ToString)
-                    outputFile.WriteLine("Error: " & ex.Message)
-                    outputFile.WriteLine("Stack Trace: " & ex.StackTrace)
-                    outputFile.WriteLine("HRESULT: " & ex.ToString)
-                End Using
-            Catch ex2 As Exception
-                Throw ex
-            End Try
+            RegistrarExceptionGenerica(ex)
             Throw ex
         Finally
             MiConexion.Close()
@@ -241,6 +152,51 @@ Public Class Conexion
 
 
 #Region "Agregado para Errores"
+    Public Shared Sub RegistrarExceptionGenerica(ByVal ex As Exception)
+        Try
+            Dim directorio As String
+            directorio = System.Configuration.ConfigurationSettings.AppSettings("rutaerrores").Trim
+            CrearDirectorio(directorio)
+
+            Dim nombre As String
+            nombre = DateTime.Now.Year & DateTime.Now.Month.ToString.PadLeft(2, "0") & DateTime.Now.Day & DateTime.Now.Hour & DateTime.Now.Minute & DateTime.Now.Second & ".TXT"
+
+            Using outputFile As New StreamWriter(directorio & Convert.ToString(nombre))
+                outputFile.WriteLine("Type: " & ex.GetType.ToString)
+                outputFile.WriteLine("Error: " & ex.Message)
+                outputFile.WriteLine("Stack Trace: " & ex.StackTrace)
+                outputFile.WriteLine("HRESULT: " & ex.ToString)
+            End Using
+        Catch ex2 As Exception
+            Throw ex2
+        End Try
+    End Sub
+
+    Public Shared Sub RegistrarSQLException(ByVal ex As SqlException)
+        Try
+
+
+            Dim directorio As String
+            directorio = System.Configuration.ConfigurationSettings.AppSettings("rutaerrores").Trim
+            CrearDirectorio(directorio)
+
+            Dim nombre As String
+            nombre = DateTime.Now.Year & DateTime.Now.Month.ToString.PadLeft(2, "0") & DateTime.Now.Day & DateTime.Now.Hour & DateTime.Now.Minute & DateTime.Now.Second & ".TXT"
+
+            Using outputFile As New StreamWriter(directorio & Convert.ToString(nombre))
+                outputFile.WriteLine("Type: " & ex.GetType.ToString)
+                outputFile.WriteLine("Error: " & ex.Message)
+                outputFile.WriteLine("Stack Trace: " & ex.StackTrace)
+                outputFile.WriteLine("HRESULT: " & ex.ToString)
+                outputFile.Write("Number" & ex.Number.ToString)
+            End Using
+        Catch ex2 As Exception
+            Throw ex2
+        End Try
+    End Sub
+
+
+
     Public Shared Sub CrearDirectorio(ByVal paramPath As String)
         Try
             Dim MiDirectorio As DirectoryInfo = New DirectoryInfo(paramPath)

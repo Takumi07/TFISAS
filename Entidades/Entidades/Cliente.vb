@@ -25,12 +25,12 @@
     End Property
 
 
-    Private vTelefono As Integer
-    Public Property Telefono() As Integer
+    Private vTelefono As String
+    Public Property Telefono() As String
         Get
             Return vTelefono
         End Get
-        Set(ByVal value As Integer)
+        Set(ByVal value As String)
             vTelefono = value
         End Set
     End Property

@@ -195,7 +195,7 @@
                                 If i = 2 Then MiHastable.Add("NroRenglon", DAL.Validacion.CompararInteger(dr3.Item(i)))
                             ElseIf MiDataRow.Item("NombreTabla") = "FacturaDetalle" Then
                                 If i = 0 Then MiHastable.Add("NroFactura", DAL.Validacion.CompararInteger(dr3.Item(i)))
-                                If i = 1 Then MiHastable.Add("NroRenglon", DAL.Validacion.CompararInteger(dr3.Item(i)))
+                                If i = 1 Then MiHastable.Add("ID_Producto", DAL.Validacion.CompararInteger(dr3.Item(i)))
                             Else
                                 'Aca me sirve la clásica, porque solo tengo 1 campo de PK
                                 If i = 0 Then MiHastable.Add(MiNombreColumna, DAL.Validacion.CompararInteger(dr3.Item(i)))

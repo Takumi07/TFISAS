@@ -234,6 +234,7 @@
             Else
                 MiVentaBLL.AltaVenta(MiVentaEntidad)
                 'Session("Mensaje") = "Su compra fue realizada con éxito." '20
+                Session("Carrito_Compras") = Nothing
                 Session("Mensaje") = BLL.IdiomaBLL.traducirMensaje(DirectCast(Session("Usuario"), Entidades.Usuario).Idioma, 234)
                 Session("Redirect") = "index.aspx"
                 Response.Redirect("Mensajes.aspx", False)

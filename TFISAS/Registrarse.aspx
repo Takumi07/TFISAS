@@ -97,14 +97,6 @@
                     <div class="col-sm-4">
                         <asp:Label ID="lbl_Telefono" class="control-label Negrita" runat="server" Text="Telefono"></asp:Label>
                         <asp:RequiredFieldValidator ID="rfv_Telefono" ControlToValidate="txt_telefono" runat="server" CssClass="labelRojo" ErrorMessage="*"></asp:RequiredFieldValidator>
-                        <asp:RangeValidator ID="rv_telefono"
-                            runat="server"
-                            ErrorMessage="*"
-                            MinimumValue="1"
-                            MaximumValue="9999999999"
-                            ControlToValidate="txt_telefono"
-                            SetFocusOnError="true"
-                            CssClass="labelRojo"></asp:RangeValidator>
                         <asp:TextBox ID="txt_telefono" class="form-control" runat="server"></asp:TextBox>
                     </div>
                     <div class="col-sm-4">
@@ -150,35 +142,16 @@
                     <div class="col-sm-4">
                         <asp:Label ID="lbl_CodigoPostal" class="control-label Negrita" runat="server" Text="Código Postal"></asp:Label>
                         <asp:RequiredFieldValidator ID="rfv_CodigoPostal" ControlToValidate="txt_CodigoPostal" runat="server" CssClass="labelRojo" ErrorMessage="*"></asp:RequiredFieldValidator>
-                        <asp:RangeValidator ID="rav_CodioPostal"
-                            runat="server"
-                            ErrorMessage="*"
-                            MinimumValue="1"
-                            MaximumValue="999999999"
-                            ControlToValidate="txt_CodigoPostal"
-                            SetFocusOnError="true"
-                            CssClass="labelRojo"></asp:RangeValidator>
                         <asp:TextBox ID="txt_CodigoPostal" class="form-control" runat="server"></asp:TextBox>
                     </div>
                     <div class="col-sm-2">
                         <asp:Label ID="lbl_Piso" class="control-label Negrita" runat="server" Text="Piso"></asp:Label>
-                        <asp:RequiredFieldValidator ID="rfv_piso" ControlToValidate="txt_Piso" runat="server" CssClass="labelRojo" ErrorMessage="*"></asp:RequiredFieldValidator>
-
                         <asp:TextBox ID="txt_Piso" class="form-control" runat="server"></asp:TextBox>
                     </div>
 
                     <div class="col-sm-2">
                         <asp:Label ID="lbl_Departamento" class="control-label Negrita" runat="server" Text="Depto"></asp:Label>
-                        <asp:RequiredFieldValidator ID="rfv_departamento" ControlToValidate="txt_departamento" runat="server" CssClass="labelRojo" ErrorMessage="*"></asp:RequiredFieldValidator>
-                        <asp:RangeValidator ID="rv_txt_departamento"
-                            runat="server"
-                            ErrorMessage="*"
-                            MinimumValue="1"
-                            MaximumValue="999999999"
-                            ControlToValidate="txt_departamento"
-                            SetFocusOnError="true"
-                            CssClass="labelRojo"></asp:RangeValidator>
-                        <asp:TextBox ID="txt_departamento" class="form-control" runat="server"></asp:TextBox>
+                       <asp:TextBox ID="txt_departamento" class="form-control" runat="server"></asp:TextBox>
                     </div>
                 </div>
                 <br />

@@ -51,4 +51,3 @@ C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\Entidades\obj\Debug\Entidades.v
 C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\Entidades\obj\Debug\Entidades.dll
 C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\Entidades\obj\Debug\Entidades.xml
 C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\Entidades\obj\Debug\Entidades.pdb
-C:\Users\ALEXI\Desktop\TFI Proyecto Final\TFISAS\Entidades\obj\Debug\Entidades.vbprojResolveAssemblyReference.cache

@@ -117,7 +117,7 @@
             Me.divError.Visible = True
             Me.lblMensajeError.Text = ex.Mensaje(Session("Usuario"))
         Catch ex As Exception
-            'MsgBox(ex.Message)
+
         End Try
     End Sub
 

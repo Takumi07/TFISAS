@@ -275,15 +275,6 @@ Partial Public Class Registrarse
     Protected WithEvents rfv_Telefono As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
-    '''Control rv_telefono.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents rv_telefono As Global.System.Web.UI.WebControls.RangeValidator
-    
-    '''<summary>
     '''Control txt_telefono.
     '''</summary>
     '''<remarks>
@@ -437,15 +428,6 @@ Partial Public Class Registrarse
     Protected WithEvents rfv_CodigoPostal As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
-    '''Control rav_CodioPostal.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents rav_CodioPostal As Global.System.Web.UI.WebControls.RangeValidator
-    
-    '''<summary>
     '''Control txt_CodigoPostal.
     '''</summary>
     '''<remarks>
@@ -464,15 +446,6 @@ Partial Public Class Registrarse
     Protected WithEvents lbl_Piso As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control rfv_piso.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents rfv_piso As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
-    '''<summary>
     '''Control txt_Piso.
     '''</summary>
     '''<remarks>
@@ -489,24 +462,6 @@ Partial Public Class Registrarse
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lbl_Departamento As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control rfv_departamento.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents rfv_departamento As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
-    '''<summary>
-    '''Control rv_txt_departamento.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents rv_txt_departamento As Global.System.Web.UI.WebControls.RangeValidator
     
     '''<summary>
     '''Control txt_departamento.

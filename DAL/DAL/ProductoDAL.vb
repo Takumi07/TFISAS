@@ -30,6 +30,29 @@ Public Class ProductoDAL
     End Function
 
 
+    ''' <summary>
+    '''Método con Lazy Loading que lista todos los productos NO DADOS DE BAJA para ver su stock. INCLUYE LOS MANGAS. Objetos INCOMPLETOS. 
+    ''' </summary>
+    ''' <returns></returns>
+    Public Function ListarTodosProductosStock() As List(Of Entidades.Producto)
+        Try
+            Dim MiListaProductos As New List(Of Entidades.Producto)
+
+            Dim MisParametros As New Hashtable
+            MisParametros.Add("@BL", False)
+            Dim miDataTable As DataTable = Conexion.Leer("ListarTodosProductosStock", MisParametros)
+            For Each miDataRow As DataRow In miDataTable.Rows
+                Dim MiProductoEntidad As New Entidades.Producto
+                FormatearProductoLazyStock(miDataRow, MiProductoEntidad)
+                MiListaProductos.Add(MiProductoEntidad)
+            Next
+            Return MiListaProductos
+
+        Catch ex As Exception
+
+        End Try
+    End Function
+
 
 
 
@@ -289,4 +312,12 @@ Public Class ProductoDAL
         Return MisImagenes
     End Function
 
+
+    Public Shared Sub FormatearProductoLazyStock(ByVal paramRow As DataRow, ByVal paramProducto As Entidades.Producto)
+        paramProducto.ID = paramRow("ID_Producto")
+        paramProducto.Genero = GeneroDAL.ObtenerGenero(paramRow("ID_Genero"))
+        paramProducto.TipoProducto = TipoProductoDAL.ObtenerTipoProducto(paramRow("ID_TipoProducto"))
+        paramProducto.Nombre = paramRow("Nombre")
+        paramProducto.Stock = DAL.InventarioDAL.ObtenerStock(paramRow("ID_Producto"))
+    End Sub
 End Class

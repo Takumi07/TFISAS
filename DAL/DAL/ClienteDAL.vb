@@ -132,7 +132,7 @@
         paramClienteEntidad.ID_Cliente = Validacion.CompararInteger(paramRow.Item("ID_Cliente"))
         paramClienteEntidad.Direccion = (New DAL.DireccionDAL).ObtenerDireccion(paramRow.Item("ID_Direccion"))
         paramClienteEntidad.FechaNacimiento = Validacion.CompararDatetime(paramRow.Item("Fecha_Nacimiento"))
-        paramClienteEntidad.Telefono = Validacion.CompararInteger(paramRow.Item("Telefono"))
+        paramClienteEntidad.Telefono = Validacion.CompararString(paramRow.Item("Telefono"))
         paramClienteEntidad.BL = paramRow.Item("BL")
     End Sub
 

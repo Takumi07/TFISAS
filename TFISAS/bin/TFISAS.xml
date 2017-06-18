@@ -6,6 +6,51 @@ TFISAS
 </name>
 </assembly>
 <members>
+<member name="F:TFISAS.VisualizarStock._divError">
+<summary>
+Control divError.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:TFISAS.VisualizarStock._lblMensajeError">
+<summary>
+Control lblMensajeError.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:TFISAS.VisualizarStock._lbl_ProductosStock">
+<summary>
+Control lbl_ProductosStock.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:TFISAS.VisualizarStock._gv_Productos">
+<summary>
+Control gv_Productos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:TFISAS.VisualizarStock._btn_Volver">
+<summary>
+Control btn_Volver.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:TFISAS.AdministrarRemitos._divError">
 <summary>
 Control divError.
@@ -7829,15 +7874,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:TFISAS.Registrarse._rv_telefono">
-<summary>
-Control rv_telefono.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:TFISAS.Registrarse._txt_telefono">
 <summary>
 Control txt_telefono.
@@ -7991,15 +8027,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:TFISAS.Registrarse._rav_CodioPostal">
-<summary>
-Control rav_CodioPostal.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:TFISAS.Registrarse._txt_CodigoPostal">
 <summary>
 Control txt_CodigoPostal.
@@ -8018,15 +8045,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:TFISAS.Registrarse._rfv_piso">
-<summary>
-Control rfv_piso.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:TFISAS.Registrarse._txt_Piso">
 <summary>
 Control txt_Piso.
@@ -8039,24 +8057,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:TFISAS.Registrarse._lbl_Departamento">
 <summary>
 Control lbl_Departamento.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:TFISAS.Registrarse._rfv_departamento">
-<summary>
-Control rfv_departamento.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:TFISAS.Registrarse._rv_txt_departamento">
-<summary>
-Control rv_txt_departamento.
 </summary>
 <remarks>
 Campo generado automáticamente.

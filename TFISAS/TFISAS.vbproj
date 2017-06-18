@@ -131,6 +131,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="VisualizarStock.aspx" />
     <Content Include="AdministrarRemitos.aspx" />
     <Content Include="AgregarIdioma.aspx" />
     <Content Include="AgregarPerfil.aspx" />
@@ -212,6 +213,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="VisualizarStock.aspx.designer.vb">
+      <DependentUpon>VisualizarStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarStock.aspx.vb">
+      <DependentUpon>VisualizarStock.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="AdministrarRemitos.aspx.designer.vb">
       <DependentUpon>AdministrarRemitos.aspx</DependentUpon>
     </Compile>

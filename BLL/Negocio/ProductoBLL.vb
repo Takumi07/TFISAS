@@ -144,10 +144,13 @@ Public Class ProductoBLL
     End Function
 
 
+
+#Region "Listar"
+
+
     Public Overridable Function ListarProductos() As List(Of Entidades.Producto)
         Try
             Return (New ProductoDAL).ListarProductos
-            'BitacoraBLL.GuardarBitacora("Se listaron todos los productos de la base de datos", BitacoraEntidad.TipoBitacora.Consulta, SesionBLL.Current.Usuario.NombreUsu)
         Catch ex As BLL.ExcepcionGenerica
             BLL.BitacoraBLL.RegistrarBitacoraErrores(New Entidades.BitacoraErrores(MiUsuarioEntidad, ex.StackTrace, ex.GetType.ToString, ex.Message))
             Throw ex
@@ -170,6 +173,22 @@ Public Class ProductoBLL
         End Try
 
     End Function
+
+
+    ''' <summary>
+    '''Método con Lazy Loading que lista todos los productos NO DADOS DE BAJA para ver su stock. INCLUYE LOS MANGAS. Objetos INCOMPLETOS. 
+    ''' </summary>
+    ''' <returns></returns>
+    Public Function ListarTodosProductosStock() As List(Of Entidades.Producto)
+        Try
+            Return (New DAL.ProductoDAL).ListarTodosProductosStock
+        Catch ex As Exception
+
+        End Try
+    End Function
+
+#End Region
+
 
 #Region "ABM"
     Public Overridable Sub Guardar(ByVal paramProducto As Entidades.Producto)

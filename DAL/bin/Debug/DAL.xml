@@ -32,6 +32,12 @@ DAL
  </summary>
  <returns></returns>
 </member>
+<member name="M:DAL.ProductoDAL.ListarTodosProductosStock">
+ <summary>
+Método con Lazy Loading que lista todos los productos NO DADOS DE BAJA para ver su stock. INCLUYE LOS MANGAS. Objetos INCOMPLETOS. 
+ </summary>
+ <returns></returns>
+</member>
 <member name="M:DAL.ProductoDAL.NuevoProducto(Entidades.Producto)">
  <summary>Este método se encargará de persistir un producto.</summary>
  <param name="paramProducto"></param>

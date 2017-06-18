@@ -111,6 +111,7 @@
                                 <asp:MenuItem Text="Agregar Manga" Value="Agregar Manga" NavigateUrl="AgregarManga.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Modificar Producto" Value="Modificar Producto" NavigateUrl="ModificarProducto.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Modificar Manga" Value="Modificar Manga" NavigateUrl="ModificarManga.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Visualizar Stock" Value="Visualizar Stock" NavigateUrl="VisualizarStock.aspx"></asp:MenuItem>
                             </asp:MenuItem>
                             <asp:MenuItem Text="Logística" Value="Logística" NavigateUrl="#">
                                 <asp:MenuItem Text="Agregar Remito" Value="Agregar Remito" NavigateUrl="AgregarRemito.aspx"></asp:MenuItem>
