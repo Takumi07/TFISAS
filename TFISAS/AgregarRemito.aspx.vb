@@ -219,17 +219,18 @@
             MiRemitoRenglon.NroRenglon = MiRemitoRengonID
 
 
+            '/*CAMBIADO PARA POBAR*/
             DirectCast(Session("RemitoACargar"), Entidades.Remito).RemitoRenglon.Add(MiRemitoRenglon)
+            Me.CargarGrid()
+
+
+
+            '/*CAMBIADO PARA PROBAR MANTENER!!!*/
+            'DirectCast(Session("RemitoACargar"), Entidades.Remito).RemitoRenglon.Add(MiRemitoRenglon)
             'Prueba
-            Session("Flag") = 2
-            Response.Redirect("AgregarRemito.aspx", False)
-
-
-            'Context.Items.Add("RemitoACargar", DirectCast(Session("RemitoACargar"), Entidades.Remito))
-            ''Aca voy a la opción que me deja modificar
-            'Server.Transfer("AgregarRemito.aspx")
-
-
+            'Session("Flag") = 2
+            'Response.Redirect("AgregarRemito.aspx", False)
+            '/*FIN DE CAMBIADO DESCOMENTAR LO DE ARRIBA*/
 
         Catch ex As BLL.CamposincompletosException
             Me.divError.Visible = True
@@ -303,8 +304,13 @@
                 MiRenglon.NroRenglon = ID_Renglon
             Next
 
-            Session("Flag") = 2
-            Response.Redirect("AgregarRemito.aspx", False)
+
+            Me.CargarGrid()
+
+            '/*CAMBIADO PARA PROBAR*/
+            'Session("Flag") = 2
+            'Response.Redirect("AgregarRemito.aspx", False)
+            '/*FIN DE CAMBIADO PARA PROBAR*/
         Catch ex As System.Data.SqlClient.SqlException
             Session("SQLERROR") = ex.Message
             Response.Redirect("Mensajes.aspx", False)

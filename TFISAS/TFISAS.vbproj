@@ -516,7 +516,7 @@
     <Content Include="FONTS\fontawesome-webfont.woff2" />
     <Content Include="FONTS\FontAwesome.otf" />
     <Content Include="Base de datos\DER SAP - Global FINAL.vsd" />
-    <Content Include="Base de datos\201706171906.BAK" />
+    <Content Include="Base de datos\201706180112.BAK" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
